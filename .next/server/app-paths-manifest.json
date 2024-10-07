@@ -1,0 +1,8 @@
+{
+  "/(setup)/page": "app/(setup)/page.js",
+  "/api/servers/[serverId]/route": "app/api/servers/[serverId]/route.js",
+  "/api/uploadthing/route": "app/api/uploadthing/route.js",
+  "/(auth)/(routes)/sign-in/[[...sign-in]]/page": "app/(auth)/(routes)/sign-in/[[...sign-in]]/page.js",
+  "/(auth)/(routes)/sign-up/[[...sign-up]]/page": "app/(auth)/(routes)/sign-up/[[...sign-up]]/page.js",
+  "/(main)/(routes)/servers/[serverId]/page": "app/(main)/(routes)/servers/[serverId]/page.js"
+}
