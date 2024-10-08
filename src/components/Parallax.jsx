@@ -112,13 +112,7 @@ function Parallax() {
         },
         0.5
       );
-      tl.to(
-        btn.current,
-        {
-          opacity: 1,
-        },
-        1.5
-      );
+      
     });
     return () => ctx.revert();
   }, []);
@@ -175,7 +169,7 @@ function Parallax() {
         </div>
         <div ref={copy1} className="copy1">
             <h5>
-            I'm a passionate web developer 
+            Development | Machine Learning | DevOps
             </h5>
         </div>
       </div>

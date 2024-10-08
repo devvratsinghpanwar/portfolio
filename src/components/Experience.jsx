@@ -25,27 +25,34 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-    <h3 className="text-white text-[24px] font-bold">
-      <a
-        href={experience.githubLink} // Add this property to your experience data
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline"
-      >
-        {experience.title}
-      </a>
-    </h3>
+      <h3 className="text-white text-[24px] font-bold">
+        <a
+          href={experience.githubLink} // Add this property to your experience data
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          {experience.title}
+        </a>
+      </h3>
       <p
         className="text-secondary text-[16px] font-semibold"
         style={{ margin: 0 }}
       ></p>
     </div>
     <div className="mt-5">
-      <img
-        src={experience.image} // Make sure you add 'image' key to your experiences data
-        alt={experience.title}
-        className="w-full h-[200px] object-contain rounded-2xl"
-      />
+      <a
+        href={experience.githubLink} // Add this property to your experience data
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        <img
+          src={experience.image} // Make sure you add 'image' key to your experiences data
+          alt={experience.title}
+          className="w-full h-[200px] object-contain rounded-2xl"
+        />
+      </a>
     </div>
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
