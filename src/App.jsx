@@ -12,6 +12,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Parallax,
 } from "./components";
 import Preloader from "./components/Preloader"; // Ensure you have this component
 
@@ -36,9 +37,9 @@ const App = () => {
       </AnimatePresence>
 
       <div className="relative z-0 bg-primary">
+        <Parallax />
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
         </div>
         <div className="bg-cover bg-no-repeat bg-center">
           <About />
